@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 .container {
     width: 1200px;
     border: solid 1px red;
@@ -6,4 +9,54 @@
 .row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.header-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 22px;
+}
+.header-menu a, #header-block a {
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+    border: solid 2px black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: .3s;
+}
+.header-menu a:hover, #header-block a:hover {
+    color: white;
+    background-color: black;
+}
+.header-menu a:active, #header-block a:active {
+    background-color: silver;
+    border-color: silver;
+}
+.col {
+    width: 50%;
+}
+#header-block {
+    gap: 30px;
+}
+#header-block h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+#header-block h2 {
+    font-weight: bolder;
+    color: silver;
+}
+#header-block a {
+    margin-top: 12px;
+    display: inline-block;  
+}
+#info-block {
+    padding-top: 70px;
+}
+#info-block h4 {
+    font-weight: bold;
+    text-transform: uppercase;
 }
