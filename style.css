@@ -38,8 +38,15 @@ html {
 .col {
     width: 50%;
 }
+#nav-block {
+    position: fixed;
+    width: 1200px;
+    z-index: 2;
+    background-color: white;
+}
 #header-block {
     gap: 30px;
+    margin-top: 160px;
 }
 #header-block h1 {
     font-size: 42px;
@@ -53,10 +60,44 @@ html {
     margin-top: 12px;
     display: inline-block;  
 }
-#info-block {
-    padding-top: 70px;
+#info-block,
+#characteristic-block  {
+    padding-top: 140px;
 }
 #info-block h4 {
     font-weight: bold;
     text-transform: uppercase;
+}
+#characteristic-block ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#characteristic-block ul li:first-child {
+    color: white;
+    background-color: black;
+}
+#characteristic-block ul li {
+    display: flex;
+}
+#characteristic-block ul li p {
+    width: 50%;
+    margin: 5px 0;
+}
+#characteristic-block .col:last-child {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+#characteristic-block img {
+    position: absolute;
+    left: -50%;
+}
+.characteristic-h4 {
+   position: absolute;
+   top: 70px;
+}
+#characteristic-block {
+    position: relative;
+    gap: 20px;
 }

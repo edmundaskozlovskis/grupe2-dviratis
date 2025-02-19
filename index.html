@@ -7,6 +7,7 @@
     </style>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
     <div class="container">
@@ -17,8 +18,8 @@
             <ul class="header-menu">
                 <li><a href="#">Header Block</a></li>
                 <li><a href="#info-block">Info</a></li>
-                <li><a href="#">Characteristic</a></li>
-                <li><a href="#">Form</a></li>
+                <li><a href="#characteristic-block">Characteristic</a></li>
+                <li><a href="#form-block">Form</a></li>
             </ul>
         </div>
         <div class="row" id="header-block">
@@ -68,6 +69,7 @@
             </div>
         </div>
         <div class="row" id="characteristic-block">
+            <h4 class="characteristic-h4">Characteristic Block</h4>
             <div class="col">
                 <ul>
                     <li>Bendra</li>
@@ -141,7 +143,44 @@
                     </li>
 
             </div>
-            <div class="col"></div>
+            <div class="col">
+                <img src="https://edmundaskozlovskis.github.io/remote-lesson-1/images/features-road-bike.webp" alt="Characteristic image">
+            </div>
+        </div>
+        <div id="form-block">
+            <form action="/">
+                <h4>Uzsakymas</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima laborum debitis porro.</p>
+                <input type="text" placeholder="Vardas">
+                <input type="tel" placeholder="Telefonas">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="form-label-box">
+                    <label>
+                        <input type="radio" name="bicycle" checked value="silver-bike">
+                        <div class="form-bike">
+                            <img src="https://cdn.webshopapp.com/shops/248478/files/409645853/image.jpg" alt="Silver bicycle">
+                            <p>300€.</p>
+                        </div>
+                        <div class="form-radio-style radio-silver"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="bicycle" checked value="red-bike">
+                        <div class="form-bike">
+                            <img src="https://dviratiskross.lt/image/cache/data/DVIRA%C4%8CIAI/KROSS%202021/Level/dviratis_kross_Level_%201_0_29_red-800x800.jpg" alt="Red bicycle">
+                            <p>360€.</p>
+                        </div>
+                        <div class="form-radio-style radio-red"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="bicycle" checked value="white-bike">
+                        <div class="form-bike">
+                            <img src="https://decathlon.ae/cdn/shop/products/668791ca51bebef1a65d8997de2f8c99_675x.progressive.jpg?v=1654926612" alt="White bicycle">
+                            <p>400€.</p>
+                        </div>
+                        <div class="form-radio-style radio-white"></div>
+                    </label>
+                </div>
+            </form>
         </div>
     </div>
     <script>
