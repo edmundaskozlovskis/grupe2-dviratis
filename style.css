@@ -2,8 +2,8 @@ html {
     scroll-behavior: smooth;
 }
 .container {
-    width: 1200px;
-    border: solid 1px red;
+    max-width: 1200px;
+    /* border: solid 1px red; */
     margin: auto;
 }
 .row {
@@ -43,6 +43,7 @@ html {
     width: 1200px;
     z-index: 2;
     background-color: white;
+    top: 0;
 }
 #header-block {
     gap: 30px;
@@ -103,6 +104,9 @@ html {
 }
 #form-block {
     padding-top: 140px;
+    margin-bottom: 140px;
+}
+#form-block .form-inner-block {
     position: relative;
 }
 #form-block form {
@@ -135,9 +139,21 @@ html {
     position: absolute;
     top: 0;
     right: 0;
+    display: none;
 }
 #form-block form img {
     width: 420px;
+}
+#form-block .form-label-box p {
+    position: absolute;
+    top: 0;
+    border: solid 1px red;
+    border-radius: 50%;
+    font-size: 24px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
 }
 #form-block .form-radio-style {
     width: 60px;
@@ -166,6 +182,9 @@ html {
     position: absolute;
     overflow: hidden;
 }
+#form-block  .form-label-box input:checked + .form-bike {
+    display: block;
+}
 #form-block form button {
     color: white;
     background-color: black;
@@ -178,4 +197,23 @@ html {
 }
 #form-block form button:hover {
     background-color: red;
+}
+#footer {
+    background-color: beige;
+}
+#footer .row {
+    padding: 12px 0;
+}
+#footer .col:last-child a {
+    display: block;
+}
+@media only screen and (max-width: 1200px) {
+    #nav-block {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 740px) {
+    #nav-block {
+        background-color: red;
+    }
 }
