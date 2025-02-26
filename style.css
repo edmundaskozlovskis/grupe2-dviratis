@@ -101,3 +101,81 @@ html {
     position: relative;
     gap: 20px;
 }
+#form-block {
+    padding-top: 140px;
+    position: relative;
+}
+#form-block form {
+    max-width: 420px;
+}
+#form-block form h4 {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#form-block form p {
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+#form-block form .form-imput-text{
+    margin: 0;
+}
+#form-block form input[type='text'],
+#form-block form input[type='tel'] {
+    border: none;
+    border-bottom: solid 1px silver;
+    padding: 10px 0;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#form-block form .form-bike {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#form-block form img {
+    width: 420px;
+}
+#form-block .form-radio-style {
+    width: 60px;
+    height: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#form-block .radio-silver {
+    background-color: silver;
+}
+#form-block .radio-red {
+    background-color: red;
+}
+#form-block .radio-white {
+    background-color: white;
+    border: silver solid 1px;
+}
+#form-block  .form-label-box {
+    display: flex;
+    gap: 22px;
+    margin: 10px 0 20px;
+}
+#form-block  .form-label-box input {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+}
+#form-block form button {
+    color: white;
+    background-color: black;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 10px 0;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#form-block form button:hover {
+    background-color: red;
+}
